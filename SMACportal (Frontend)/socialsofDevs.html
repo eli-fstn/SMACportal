@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="forDevs.css"/>
+    <link rel="icon" href="Image&FilePath/LOGO.PNG" type="image/x-icon"/>
+    <title>SMAC: Student Portal (Socials of Developers)</title>
+    <link rel="icon" href="schoolLogo.PNG" type="image/x-icon"/>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1>Socials of Developers</h1>
+        <a href="dashboardPage.html">Go Back</a>
+        <p></p>
+        <br>
+        <hr>
+    </div>
+    <p id="note">NOTE: You can contact our developers below if you have concerns about the portal itself, however if you have any concerns about your information or data, kindly communicate with your school adviser or coordinator. </p>
+    <div class="container">
+        <div id="fade-in" class="fade-in">
+            <img id="img" src="images\Elijah.jpg" width="150">
+            <div class="info">
+                <p>NAME: Elijah Joshua E. Festin</p>
+                <a href="https://www.facebook.com/share/18RhPFVj2s/?mibextid=wwXIfr">FB: Elijah Festin</a>
+                <p>Email: festinelijah@gmail.com</p>
+            </div>
+        </div>
+            <div id="fade-in" class="fade-in">
+                <img id="img" src="images\Grace.jpg" width="150">
+                <div class="info">
+                    <p>NAME: Baby Grace A. Unday</p>
+                    <a href="https://www.facebook.com/share/146Ju4BJjP/?mibextid=wwXIfr">FB: Grace Unday</a>
+                    <p>Email: graceunday07@gmail.com</p>
+                </div>
+            </div>
+        <div id="fade-in" class="fade-in">
+            <img id="img" src="images\Cholo.png" width="150">
+            <div class="info">
+                <p>NAME: Cholo E. Baculi</p>
+                <a href="https://www.facebook.com/share/1BFNi2seWr/?mibextid=wwXIfr">FB: Cholo Baculi</a>
+                <p>Email: baculicholo4@gmail.com</p>
+            </div>
+        </div>
+            <div id="fade-in" class="fade-in">
+                <img id="img" src="images\Torreta.png" width="150">
+                <div class="info">
+                    <p>NAME: John Patrick A. Torreta</p>
+                    <a href="https://www.facebook.com/share/1539nBJZXH/?mibextid=wwXIfr">FB: John Patrick Torreta</a>
+                    <p>Email: torretapatrick@gmail.com</p>
+                </div>
+            </div>
+        <div id="fade-in" class="fade-in">
+            <img id="img" src="images\Leenard.jpg" width="150">
+            <div class="info">
+                <p>NAME: Lee-Nard B. Bartolome</p>
+                <a href="https://www.facebook.com/share/15RWQay76S/?mibextid=wwXIfr">FB: Lee-Nard Belarde</a>
+                <p>Email: belardeleenard@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        const fadeSections = document.querySelectorAll('.fade-in');
+
+        window.addEventListener('scroll', () => {
+        fadeSections.forEach(fade => {
+
+        const sectionTop = fade.offsetTop;
+        const sectionHeight = fade.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+
+        if (scrollY + windowHeight > sectionTop && scrollY < sectionTop + sectionHeight) {
+        fade.style.opacity = '1';
+        }
+        else {
+        fade.style.opacity = '0';
+        }
+        });
+        });
+    </script>
+</script>
+</html>

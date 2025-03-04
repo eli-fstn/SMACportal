@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fortodoPage.css"/>
+    <title>SMAC: Student Portal (Tasks)</title>
+    <link rel="icon" href="images\schoolLogo.PNG" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo">
+				<img id="nav-logo" src="images\schoolLogo.PNG">
+				<h3>SMAC: Student Portal</h3>
+			</div>
+			<ul>
+				<li>
+					<a href="homePage.html">Home</a>
+				</li>
+				<li class="dropdown">
+					<a href="#">Personal</i> <i id="arrow" class="fa-solid fa-chevron-down"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="AccountPage.html">Account</a></li>
+						<li><a href="gradesPage.html">Grades</a></li>
+						<li><a href="schedulePage.html">Schedules</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#">Administrative <i id="arrow" class="fa-solid fa-chevron-down"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="balancePage.html">Balance</a></li>
+						<li><a href="notifPage.html">Notifications</a></li>
+						<li><a href="todoPage.html">Tasks</a></li>
+					</ul>
+				</li>
+				<li><a style="color: #2A7BD9;" href="Index.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+		<div class="container">
+			<h2>To-do List:</h2>
+			<hr>
+		</div>
+			<div id="container-content" class="container-content">
+				<div class="content1">
+					<p>Subject:</p>
+					<P>Teacher:</P>
+					<P>Date Uploaded:</P>
+					<P>Due date:</P>
+					<br>
+					<p>Activity:</p>
+				</div>
+					<div class="content1-data">
+						<p>.NET Computer Programming</p>
+						<P>Mr. Vic Robert Buenafe</P>
+						<P>February 23, 2025</P>
+						<P>March 07, 2025</P>
+						<br>
+						<p>Create a web page using HTML and CSS that contains the things you want to achieve this 2025. Be Creative!
+						</p>
+					</div>
+						<div class="container-button">
+							<button class="button">Mark as done</button>
+						</div>
+			</div>
+				<div id="container-content" class="container-content">
+					<div class="content1">
+						<p>Subject:</p>
+						<P>Teacher:</P>
+						<P>Date Uploaded:</P>
+						<P>Due date:</P>
+						<br>
+						<p>Activity:</p>
+					</div>
+						<div class="content1-data">
+							<p>21st Century Literature</p>
+							<P>Mr. Aljay Ramos</P>
+							<P>February 18, 2025</P>
+							<P>March 01, 2025</P>
+							<br>
+							<p>Choose two types of lyric poetry that we have discussed, write your work, be imaginative and avoid copying existing works.
+							</p>
+						</div>
+							<div class="container-button">
+								<button class="button">Mark as done</button>
+							</div>
+				</div>
+	<footer>
+		<div class="schinfo">
+			<img id="flogo" src="images\schoolLogo.PNG" height="60">
+				<div class="branch">
+					<h3>MAIN CAMPUS</h3>
+					<p>Niog 1, Bacoor City, Cavite | Tel No: (046) 417 - 2248</p>
+					<h3>MALIKSI CAMPUS</h3>
+					<p>Maliksi III, Bacoor City, Cavite | Tel No: (046) 417 - 5010</p>
+				</div>
+			<div class="socials">
+				<i class="fa-brands fa-facebook"> <a>St. Matthew Academy of Cavite</a></i> <br>
+				<i id="em" class="fa-solid fa-envelope"> <a>stmatthew2015@yahoo.com</a></i>
+					<div class="devs">
+						<p>If you have any concerns and suggestions,
+						<a style="color: #2A7BD9; font-size: 17px;
+						text-decoration: none;"  href="SocialsOfDevs.html">Click here</a></p>
+					</div>
+			</div>
+		</div>
+			<div class="sch">
+				<p>@1998 - 2025 | St. Matthew Academy of Cavite</p>
+			</div>
+	</footer>
+<script>
+	const buttons = document.querySelectorAll('.button');
+
+	buttons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const taskContainer = button.closest('.container-content');
+
+			if (button.textContent === 'Mark as done') {
+				taskContainer.style.backgroundColor = '#d6fdd8';
+				button.textContent = 'Mark as undone';
+			} else {
+				taskContainer.style.backgroundColor = '#e9f3ff';
+				button.textContent = 'Mark as done';
+			}
+		});
+	});
+</script>
+</body>
+</html>
