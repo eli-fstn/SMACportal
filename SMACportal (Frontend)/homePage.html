@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+	<link rel="stylesheet" href="forhomePage.css"/>
+    <title>SMAC: Student Portal (Home)</title>
+    <link rel="icon" href="images\schoolLogo.PNG" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo">
+				<img id="nav-logo" src="images\schoolLogo.PNG">
+				<h3>SMAC: Student Portal</h3>
+			</div>
+			<ul>
+				<li>
+					<a href="homePage.html">Home</a>
+				</li>
+				<li class="dropdown">
+					<a href="#">Personal</i> <i id="arrow" class="fa-solid fa-chevron-down"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="AccountPage.html">Account</a></li>
+						<li><a href="gradesPage.html">Grades</a></li>
+						<li><a href="schedulePage.html">Schedules</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#">Administrative <i id="arrow" class="fa-solid fa-chevron-down"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="balancePage.html">Balance</a></li>
+						<li><a href="announcementPage.html">Announcements</a></li>
+						<li><a href="todoPage.html">Tasks</a></li>
+						<li><a href="eventPage.html">Events</a></li>
+					</ul>
+				</li>
+				<li><a style="color: #2A7BD9;" href="Index.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="container-header">
+			<div class="greet">
+				<h4 id="user-greetings">Hello there, Dela Cruz!</h4>
+				<p id="content">Always stay updated in your student portal</p>
+			</div>
+		</div>
+			<div class="container-notifications">
+				<p id="title">Announcements</p>
+				<hr>
+				<div class="overall-notif">
+					<div class="content-notif">
+						<i id="bell" class="fa-solid fa-bell"></i>
+						<p id="notif-label">Admin</p>
+					</div>
+				</div>
+					<div class="overall-notif">
+						<div class="content-notif">
+							<i id="bell" class="fa-solid fa-bell"></i>
+							<p id="notif-label">Admin</p>
+						</div>
+					</div>
+			</div>
+				<div class="container-progress">
+					<p id="title">Progress</p>
+					<hr>
+					<div class="progress-wrapper">
+						<div class="progress-container">
+							<svg class="progress-ring" width="160" height="160">
+								<circle class="progress-ring__background" stroke="#e0e0e0" stroke-width="15" fill="transparent" r="70" cx="80" cy="80"/>
+								<circle class="progress-ring__circle" stroke="#2A7BD9" stroke-width="15" fill="transparent" r="70" cx="80" cy="80"/>
+							</svg>
+							<div class="progress-text">80%</div>
+						</div>
+						<div class="progress-info">
+							<p>You have completed 80% of your to-do list. Keep going!</p>
+						</div>
+					</div>
+				</div>
+					<div class="container-todolist">
+						<p id="title">My Assignments</p>
+						<hr>
+							<div class="overall-todo">
+								<div class="todo-header">
+									<i id="bell" class="fa-solid fa-bell"></i>
+									<p id="todo-label">.NET Computer Programming</p>
+								</div>
+									<div class="todo-content">
+										<div class="todo-deadline">
+											<p>Due date:</p>
+										</div>
+											<div class="todo-data">
+												<p>March 07, 2025</p>
+											</div>
+									</div>
+							</div>
+								<div class="overall-todo">
+									<div class="todo-header">
+										<i id="bell" class="fa-solid fa-bell"></i>
+										<p id="todo-label">21st Century Literature</p>
+									</div>
+										<div class="todo-content">
+											<div class="todo-deadline">
+												<p>Due date:</p>
+											</div>
+												<div class="todo-data">
+													<p>March 01, 2025</p>
+												</div>
+										</div>
+								</div>
+					</div>
+	</div>
+	<footer>
+		<div class="schinfo">
+			<img id="flogo" src="images\schoolLogo.PNG" height="60">
+				<div class="branch">
+					<h3>MAIN CAMPUS</h3>
+					<p>Niog 1, Bacoor City, Cavite | Tel No: (046) 417 - 2248</p>
+					<h3>MALIKSI CAMPUS</h3>
+					<p>Maliksi III, Bacoor City, Cavite | Tel No: (046) 417 - 5010</p>
+				</div>
+			<div class="socials">
+				<i class="fa-brands fa-facebook"> <a>St. Matthew Academy of Cavite</a></i> <br>
+				<i id="em" class="fa-solid fa-envelope"> <a>stmatthew2015@yahoo.com</a></i>
+					<div class="devs">
+						<p>If you have any concerns and suggestions,
+						<a style="color: #2A7BD9; font-size: 17px;
+						text-decoration: none;"  href="SocialsOfDevs.html">Click here</a></p>
+					</div>
+			</div>
+		</div>
+			<div class="sch">
+				<p>@1998 - 2025 | St. Matthew Academy of Cavite</p>
+			</div>
+	</footer>
+</body>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		function setProgress(percent) {
+			const circle = document.querySelector(".progress-ring__circle");
+			const circumference = 2 * Math.PI * 50;
+			const offset = circumference - (percent / 100) * circumference;
+			circle.style.strokeDashoffset = offset;
+		}
+		setProgress(80); // Set the progress percentage
+	});
+</script>
+</html>

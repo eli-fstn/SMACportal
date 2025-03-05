@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(images/SchoolBackground.png);
+    backdrop-filter: blur(5px);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    background-color: #ffffff;
+    border: 2px solid rgba(211, 212, 214, 0.404);
+    box-shadow: 0 0 10px rgba(3, 29, 85, 0.404);
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+#header {
+    color: #2A7BD9;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.input-box input {
+    outline: none;
+    width: 350px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #dbdbdb;
+    font-weight: 600;
+}
+.input-box label {
+    color: #002249;
+    font-size: 16px;
+    font-weight: 650;
+}
+.input-box ::placeholder{
+    color: rgb(136, 134, 134);
+    opacity: 0.8;
+}
+.btn {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    line-height: 40px;
+    width: 30%;
+    height: 40px;
+    background: #2A7BD9;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(72, 76, 83, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    color:#ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px #535252;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+}
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    outline: none;
+    border-radius: 5px;
+    border-color: #ffffff;
+    font-weight: 600;
+}
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+.eye-icon:hover {
+    color: #333;
+}
+.btn:active {
+    box-shadow: 0 3px #2e2d2d;
+    transform: translateY(4px);
+}
+#logo {
+    width: 280px;
+    height: 100px;
+    margin-top: 10rem;
+}
+.logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.school {
+    text-shadow: 1px 2px black;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*DESKTOP & PC VIEW*/
+@media only screen and (min-width: 1200px) {
+    .main {
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(211, 212, 214, 0.404);
+        box-shadow: 0 0 10px rgba(3, 29, 85, 0.404);
+        border-radius: 5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #header{
+        color: #2A7BD9;
+        font-size: 27px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .input-box input {
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        outline: none;
+        width: 380px;
+        margin-bottom: 1rem;
+        padding: 10px;
+        height: 20px;
+        border-radius: 5px;
+        border-color: #000000;
+        font-weight: 600;
+    }
+    .input-box label {
+        color: #002249;
+        font-size: 16px;
+        font-weight: 650;
+    }
+    .input-box ::placeholder{
+        color: rgb(136, 134, 134);
+        opacity: 0.8;
+    }
+    .btn {
+        margin: auto;
+        text-align: center;
+        display: grid;
+        line-height: 40px;
+        width: 34%;
+        height: 44px;
+        background: #2A7BD9;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(72, 76, 83, 0.1);
+        cursor: pointer;
+        font-size: 18px;
+        color:#ffffff;
+        font-weight: bold;
+        box-shadow: 0 4px #535252;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    #logo {
+        width: 340px;
+        height: 120px;
+        margin-top: 5rem;
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 23px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #888;
+    }
+    .eye-icon:hover {
+        color: #333;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 18px;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+/*LAPTOP VIEW*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .main {
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(211, 212, 214, 0.404);
+        box-shadow: 0 0 10px rgba(3, 29, 85, 0.404);
+        border-radius: 5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }
+    #header{
+        color: #2A7BD9;
+        font-size: 23px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .input-box input {
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        outline: none;
+        width: 340px;
+        margin-bottom: 1rem;
+        padding: 9.5px;
+        border-radius: 5px;
+        border-color: #000000;
+        font-weight: 600;
+    }
+    .input-box label {
+        color: #002249;
+        font-size: 15px;
+        font-weight: 650;
+    }
+    .input-box ::placeholder{
+        color: rgb(136, 134, 134);
+        opacity: 0.8;
+    }
+    .btn {
+        margin: auto;
+        text-align: center;
+        display: grid;
+        line-height: 40px;
+        width: 28%;
+        height: 38px;
+        background: #2A7BD9;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(72, 76, 83, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        color:#ffffff;
+        font-weight: bold;
+        box-shadow: 0 4px #535252;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    #logo {
+        width: 300px;
+        height: 110px;
+        margin-top: 4rem;
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 19px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #888;
+    }
+    .eye-icon:hover {
+        color: #333;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 18px;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .main {
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(211, 212, 214, 0.404);
+        box-shadow: 0 0 10px rgba(3, 29, 85, 0.404);
+        border-radius: 5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    #header {
+        color: #2A7BD9;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .input-box input {
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        outline: none;
+        width: 310px;
+        margin-bottom: .5rem;
+        padding: 11px;
+        height: 10px;
+        border-radius: 5px;
+        border-color: #000000;
+        font-weight: 600;
+    }
+    .input-box label {
+        color: #002249;
+        font-size: 14px;
+        font-weight: 650;
+    }
+    .input-box ::placeholder{
+        color: rgb(136, 134, 134);
+        opacity: 0.8;
+    }
+    .btn {
+        margin: auto;
+        text-align: center;
+        display: grid;
+        line-height: 40px;
+        width: 27%;
+        height: 37px;
+        background: #2A7BD9;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(72, 76, 83, 0.1);
+        cursor: pointer;
+        font-size: 14px;
+        color:#ffffff;
+        font-weight: bold;
+        box-shadow: 0 4px #535252;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 16px;
+        color: #888;
+    }
+    .eye-icon:hover {
+        color: #333;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    #logo {
+        width: 250px;
+        height: 90px;
+        margin-top: 3rem;
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 16px;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px){
+    .main {
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(211, 212, 214, 0.404);
+        box-shadow: 0 0 10px rgba(3, 29, 85, 0.404);
+        border-radius: 5px;
+        padding-left: .7rem;
+        padding-right: .7rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #header {
+        color: #2A7BD9;
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .input-box input {
+        box-shadow: 0 0 8px rgba(0,0,0,.2);
+        outline: none;
+        width: 230px;
+        margin-bottom: .5rem;
+        padding: 1px;
+        border-radius: 3px;
+        border-color: #000000;
+        font-weight: 600;
+        height: 20px;
+        font-size: 9px;
+    }
+    .input-box label {
+        color: #002249;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .input-box ::placeholder{
+        color: rgb(136, 134, 134);
+        opacity: 0.8;
+        font-size: 9px;
+    }
+    .btn {
+        text-align: center;
+        display: grid;
+        line-height: 25px;
+        width: 40%;
+        height: 25px;
+        background: #2A7BD9;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(72, 76, 83, 0.1);
+        cursor: pointer;
+        font-size: 11px;
+        color:#ffffff;
+        font-weight: bold;
+        box-shadow: 0 3px #535252;
+    }
+    .btn:active {
+        box-shadow: 0 1px #2e2d2d;
+        transform: translateY(4px);
+    }
+    #logo {
+        width: 170px;
+        height: 60px;
+        margin-top: 3rem;
+    }
+    .school {
+        text-shadow: 1px 1px black;
+        font-weight: bold;
+        font-size: 10px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 12px;
+        color: #888;
+    }
+    .eye-icon:hover {
+        color: #333;
+    }
+    .btn:active {
+        box-shadow: 0 3px #2e2d2d;
+        transform: translateY(4px);
+    }
+    .school {
+        text-shadow: 1px 2px black;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input-container {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
